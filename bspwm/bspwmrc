@@ -18,7 +18,7 @@ bspc rule -a code desktop='^2'
 bspc rule -a Screenkey manage=off
 
 # wallpaper
-feh --bg-fill /home/glow/Imágenes/wall/pacman.jpg
+feh --bg-fill /home/glow/Imágenes/wall/nasa.png
 
 # bateria
 sudo tlp start

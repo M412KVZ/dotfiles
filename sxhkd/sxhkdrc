@@ -8,7 +8,7 @@ super + t
 
 # program launcher
 super + d
-	rofi -show run
+	~/.config/polybar/scripts/launcher && ~/.config/polybar/scripts/powermenu_alt &
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -34,16 +34,12 @@ super + c
 super + alt + v
 	firejail vlc
 
-# config
-#	io.elementary.switchboard
-
 # Archivos
-super + alt + e
+ctrl + shift + e
 	io.elementary.files
-
-# Ranger
-#super + alt + e
-#	ranger	
+# spotify
+ctrl + shift + m
+	spotify
 
 #
 # bspwm hotkeys
