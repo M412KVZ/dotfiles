@@ -10,8 +10,18 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 ## Launch
 
-## one bar 
+## minimal_bar
+#polybar logo -c ~/.config/polybar/minimal_bar.ini &
+#polybar workspace -c ~/.config/polybar/minimal_bar.ini &
+#polybar date -c ~/.config/polybar/minimal_bar.ini &
+#polybar vol -c ~/.config/polybar/minimal_bar.ini &
+#polybar bluetooth -c ~/.config/polybar/minimal_bar.ini &
+#polybar wifi -c ~/.config/polybar/minimal_bar.ini &
+#polybar battery -c ~/.config/polybar/minimal_bar.ini &
+#polybar power -c ~/.config/polybar/minimal_bar.ini &
 
+
+## unibar
 polybar logo -c ~/.config/polybar/bar.ini &
 polybar workspace -c ~/.config/polybar/bar.ini &
 polybar ip -c ~/.config/polybar/bar.ini &
@@ -24,6 +34,7 @@ polybar office -c ~/.config/polybar/bar.ini &
 polybar tor -c ~/.config/polybar/bar.ini &
 polybar spotify -c ~/.config/polybar/bar.ini &
 polybar camera -c ~/.config/polybar/bar.ini &
+polybar brightnessctl -c ~/.config/polybar/bar.ini &
 polybar cpu -c ~/.config/polybar/bar.ini &
 polybar ram -c ~/.config/polybar/bar.ini &
 polybar vol -c ~/.config/polybar/bar.ini &
@@ -32,12 +43,16 @@ polybar wifi -c ~/.config/polybar/bar.ini &
 polybar battery -c ~/.config/polybar/bar.ini &
 polybar power -c ~/.config/polybar/bar.ini &
 
-## separate bars
 
+## barra de modulos insdependiente
+
+## Left bar
 #polybar logo -c ~/.config/polybar/logo.ini &
 #polybar workspace -c ~/.config/polybar/workspace.ini &
 #polybar ip -c ~/.config/polybar/ip.ini &
 #polybar hack -c ~/.config/polybar/hack.ini &
+
+## Center bar
 #polybar terminal -c ~/.config/polybar/terminal.ini &
 #polybar web -c ~/.config/polybar/web.ini &
 #polybar calendar -c ~/.config/polybar/calendar.ini &
@@ -46,6 +61,8 @@ polybar power -c ~/.config/polybar/bar.ini &
 #polybar tor -c ~/.config/polybar/tor.ini &
 #polybar spotify -c ~/.config/polybar/spotify.ini &
 #polybar camera -c ~/.config/polybar/camera.ini &
+
+## Right bar
 #polybar cpu -c ~/.config/polybar/cpu.ini &
 #polybar ram -c ~/.config/polybar/ram.ini &
 #polybar vol -c ~/.config/polybar/vol.ini &
