@@ -8,7 +8,7 @@ super + t
 
 # program launcher
 super + d
-	~/.config/polybar/scripts/launcher && ~/.config/polybar/scripts/powermenu_alt &
+	~/.config/polybar/scripts/launcher &
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -35,7 +35,7 @@ super + alt + v
 	firejail vlc
 
 # Archivos
-ctrl + shift + e
+super + alt + e
 	io.elementary.files
 # spotify
 ctrl + shift + m

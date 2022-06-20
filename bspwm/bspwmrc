@@ -2,7 +2,9 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI
+#bspc monitor -d      
+#bspc monitor -d      
+bspc monitor -d      
 
 bspc config border_width         1
 bspc config window_gap           1
@@ -18,7 +20,10 @@ bspc rule -a code desktop='^2'
 bspc rule -a Screenkey manage=off
 
 # wallpaper
-feh --bg-fill /home/glow/Imágenes/wall/nasa.png
+# elegir un wall paper especifico
+feh --bg-fill ~/Imágenes/wall/wall023.jpg
+# elegir un wallpapper al zar cada vez que se inica o se recarga
+#feh --bg-fill --no-fehbg --randomize ~/Imágenes/wall/*
 
 # bateria
 sudo tlp start
